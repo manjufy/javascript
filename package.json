@@ -1,0 +1,17 @@
+{
+  "name": "javascript-examples",
+  "version": "1.0.0",
+  "description": "JavaScript Examples",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Manjunath Reddy",
+  "license": "MIT",
+  "dependencies": {
+    "babel": "^6.5.2"
+  }
+}
