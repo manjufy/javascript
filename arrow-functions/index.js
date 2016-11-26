@@ -97,7 +97,7 @@ function manju() {
       return 1+1+i
    } */
    // same as above
-   var fun = (i) => 1 +1 + i
+   var fun = (i) => 1 + 1 + i
 
    return fun(44)
 }
