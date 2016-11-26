@@ -106,4 +106,24 @@ function manju() {
 console.log('Manju = ', manju())
 console.log('Manju = ', manju(2, 3)) // 4
 
+// Function body
+var func = (i) => i * i                // concise syntax, implied "return"
+console.log(func(2)) // return 4
+var func = () => { return x + y }   // with block body, explicit "return" needed
+
+var func = () => { foo: 1 } // calling func returns undefined
+console.log (func()) // undefined
+
+// Correct way is
+var func = () => ({ foo:1 })
+console.log (func()) // { foo: 1 }
+
+
+var simple = a => a > 15 ? 15: a
+console.log('a is less than 15, so print a(1)', simple(1))
+console.log('a is greater than 15, so print 66 = ', simple(66))
+var double = (a, b) => {
+   return a + b
+}
+console.log(double(3,4)) // 7
 console.log('====== END JavaScript Arrow functions ======')
