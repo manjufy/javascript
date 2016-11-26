@@ -93,6 +93,7 @@ console.log(foo(1)) // 3
 
 function manju() {
    console.log('manju(): arguments = ', [...arguments]) // [ 2, 3 ]
+   console.log('manju(): arguments = ', arguments) // { '0': 2, '1': 3 }
    /* var fun = (i) => {
       return 1+1+i
    } */

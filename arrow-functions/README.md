@@ -5,3 +5,4 @@
 4. Arrow functions cannot be used as constructors and will throw an error when used with `new`
 5. The `yield` keyword may not be used in an arrow function's body (except when permitted within functions further nested within it). As a consequence, arrow functions cannot be used as generators.
 6. No biding `arguments`: Arrow functions do not bind an arguments object Thus, arguments is simply a reference to the name in the enclosing scope.
+7. Arrow functions don't have their own `arguments` object, but in most cases `rest paramters` are good alternative
