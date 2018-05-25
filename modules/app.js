@@ -1,5 +1,10 @@
 // console.log(module)
 
-const logger = require('./logger')
+const Logger = require('./logger')
+const logger = new Logger()
 
-logger('message')
+logger.on('messageLogged', (arg) => {
+	console.log('Listner called ',arg)
+})
+
+logger.log('message')
