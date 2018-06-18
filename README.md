@@ -13,3 +13,7 @@ JavaScript experiments and examples :-)
 ## References
 
 https://www.infoworld.com/article/3196070/node-js/10-javascript-concepts-nodejs-programmers-must-master.html
+
+
+
+`You can never understand everything. But, you should push yourself to understand the system" - Ryan Dahl (Creator or Node.js)
