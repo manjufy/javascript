@@ -16,5 +16,8 @@ https://www.infoworld.com/article/3196070/node-js/10-javascript-concepts-nodejs-
 
 http://latentflip.com/loupe/
 
-`You can never understand everything. But, you should push yourself to understand the system" - Ryan Dahl (Creator or Node.js)
+http://exploringjs.com/es6/index.html#toc_ch_arrow-functions
+
+
+```You can never understand everything. But, you should push yourself to understand the system" - Ryan Dahl (Creator or Node.js)```
 
