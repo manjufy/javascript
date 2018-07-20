@@ -12,7 +12,6 @@ var animals = [
 ]
 
 // old way
-
 var dogs = []
 for (var i = 0; i < animals.length; i++) {
   if (animals[i].species === 'dog')
@@ -20,6 +19,9 @@ for (var i = 0; i < animals.length; i++) {
 }
 
 // filter
-var dogs = animals.filter(function(animal) {
-  return animals.species === 'dog'
-})
+var isDog = function(animal) {
+  return animal.species === 'dog'
+}
+
+var dogs = animals.filter(isDog)
+var otherAnimals = animals.reject(isDog)
