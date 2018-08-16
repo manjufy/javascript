@@ -52,4 +52,13 @@ console.log(promise.var) // can access through dot notation only in firefox and 
  */
 console.log('Drivers length', drivers.length) // 2
 drivers[4] = 'Daniel Ricciardo'
-console.log('Drivers length', drivers.length) // 5 -> Surprised
+console.log('Drivers length', drivers.length) // Increasing the length 5 -> Surprised
+drivers.length = 10
+console.log('Drivers length', drivers.length) // 10?  Surprised
+console.log(Object.keys(drivers)) // Look, we can access array through Object, ['0','1','4']
+
+// Array length
+// const names = new Array(4294967296);
+// console.log('Names', names) // RangeError: Invalid array length
+const names = new Array(4294967295);
+console.log('Names', names) // Names [ <4294967295 empty items> ]
