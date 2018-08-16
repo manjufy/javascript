@@ -62,3 +62,8 @@ console.log(Object.keys(drivers)) // Look, we can access array through Object, [
 // console.log('Names', names) // RangeError: Invalid array length
 const names = new Array(4294967295);
 console.log('Names', names) // Names [ <4294967295 empty items> ]
+
+var newDrivers = []; 
+newDrivers.length = Math.pow(2,32)-1; //set array length less than 2 to the 32nd power 
+console.log(newDrivers.length); //4294967295
+
