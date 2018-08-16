@@ -1,0 +1,1 @@
+`> node array/index.js`
