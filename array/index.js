@@ -67,3 +67,14 @@ var newDrivers = [];
 newDrivers.length = Math.pow(2,32)-1; //set array length less than 2 to the 32nd power 
 console.log(newDrivers.length); //4294967295
 
+// array length elements
+const teams = ['Ferrari', 'Mercedes', 'RedBull']
+teams.length = 5
+printEntries(teams) // 2 undefined elements
+function printEntries(arr) {
+    var length = arr.length;
+    for (var i = 0; i < length; i++) {
+      console.log(arr[i]);
+    }
+    console.log('=== printed ===');
+  }
