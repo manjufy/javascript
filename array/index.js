@@ -1,3 +1,6 @@
+/**
+ * Arrays are list-like objects
+ */
 const drivers = ['Sabestian Vettel', 'Lewis Hamilton', 'Fernando Alonso']
 console.log(drivers, drivers.length)
 // [ 'Sabestian Vettel', 'Lewis Hamilton', 'Fernando Alonso' ] 3
@@ -29,3 +32,24 @@ console.log(drivers.indexOf('Sabestian Vettel')) // 0
 // Remove an item by index position and number of items to be remove from the position
 drivers.splice(drivers.indexOf('Daniel Ricciardo'), 2)
 console.log(drivers, drivers.length)
+
+const driversCopy = drivers.slice()
+console.log(driversCopy)
+
+// TIPS
+var promise = {
+    'var': 'Var is reserved word',
+    'array': 'array is also reserved word'
+}
+
+// Object properties which happen to be reserved words can only be accessed as string literals
+console.log(promise['var'], promise['array'])
+console.log(promise.var) // can access through dot notation only in firefox and chrome
+
+/**
+ * Arrays length and numerical properties
+ * A JavaScript array's length property and numerical properties are connected
+ */
+console.log('Drivers length', drivers.length) // 2
+drivers[4] = 'Daniel Ricciardo'
+console.log('Drivers length', drivers.length) // 5 -> Surprised
