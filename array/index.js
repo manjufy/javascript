@@ -22,3 +22,10 @@ console.log(drivers, drivers.length)
 // Add to the front of an array
 drivers.unshift('Sabestian Vettel')
 console.log(drivers, drivers.length)
+
+// Find the index of an item 
+console.log(drivers.indexOf('Sabestian Vettel')) // 0
+
+// Remove an item by index position and number of items to be remove from the position
+drivers.splice(drivers.indexOf('Daniel Ricciardo'), 2)
+console.log(drivers, drivers.length)
