@@ -1,4 +1,5 @@
 // Exploring for-loop
+// https://es6console.com/jl1m6rvw/
 
 for(var i= 0; i < 2; i++) {
    setTimeout(() => console.log(i)) // whats the output
