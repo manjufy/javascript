@@ -25,3 +25,19 @@ add()
 
 console.log(counter) // 0 0
 //  A JavaScript inner function can solve this.
+
+
+function add () {
+    var counter = 0
+    function plus () {
+        counter += 1
+    }
+    plus()
+    return counter
+}
+
+add()
+add()
+add()
+
+console.log(add()) // 1
