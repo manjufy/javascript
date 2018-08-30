@@ -54,3 +54,18 @@ const twentySomethingLongFullNames2 = users
                                             .filter(isAtLeastTenChars)
 console.log(twentySomethingLongFullNames2)
                                             
+// is there a better way to do this?
+// Yes, with reduce
+
+const twentySomethingLongFullNamesWithReduce = users.reduce(
+    (accumulator, user) => {
+        const fullName = makeFullName(user)
+        if (isTwenties(user) && isAtLeastTenChars(fullName)) {
+            accumulator.push(fullName)
+        }
+
+        return accumulator
+    }, []
+);
+
+console.log(twentySomethingLongFullNamesWithReduce)
