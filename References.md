@@ -12,6 +12,10 @@ https://medium.com/@koresar/fun-with-stamps-episode-1-stamp-basics-e0627d81efe0
 
 https://javascript.info/
 
+https://github.com/manjufy/You-Dont-Know-JS
+
+https://eloquentjavascript.net/
+
 ## JavaScript Algorithms and Data Structures
 
 https://github.com/trekhleb/javascript-algorithms
