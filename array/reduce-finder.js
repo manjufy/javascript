@@ -17,3 +17,5 @@ const fruits = [
 
   const bananas = fruitFinder(fruit => fruit.name === 'bananas')
   console.log(bananas)
+
+  // https://hackernoon.com/reduce-your-fears-about-array-reduce-629b334ab945
