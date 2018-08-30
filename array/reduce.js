@@ -1,6 +1,6 @@
 /**
  * Aggregate by event and its images
- * Ex:
+ * Ex: Output
  * { 
  *  '11':
         {   id: 11,
@@ -20,7 +20,7 @@
         }
     }
  */
-const eventItems = [
+const cars = [
     {
         "id": 11,
         "imgId": 65,
@@ -51,7 +51,7 @@ const eventItems = [
     }
   ]
 
-  function groupItems(result, item) {
+  function groupCars(result, item) {
     if (result[item.id] && (result[item.id].id == item.id)) {
         result[item.id].images.push(item.imgHash)
     } else {
@@ -67,5 +67,5 @@ const eventItems = [
     return result
   }
   
-  const items = eventItems.reduce(groupItems, {})
-  console.log(items);
+  const carlist = cars.reduce(groupCars, {})
+  console.log(carlist);
