@@ -1,4 +1,4 @@
-var add = (function() {
+var add = function() {
     var counter = 0
 
     return function() {
@@ -6,11 +6,11 @@ var add = (function() {
 
         return counter
     }
-})
+}
 
 
-add();
-add();
-add();
+add()();
+add()();
+add()();
 
-console.log(add().toString())
+console.log(add()())
