@@ -44,3 +44,13 @@ const users = [
 console.log(twentySomethingLongFullNames)
 
 // How to break them down
+const isTwenties = user => user.age >= 20 && user.age < 30
+const makeFullName = user => `${user.firstName} ${user.lastName}`
+const isAtLeastTenChars = fullName => fullName.length >= 10
+
+const twentySomethingLongFullNames2 = users
+                                            .filter(isTwenties)
+                                            .map(makeFullName)
+                                            .filter(isAtLeastTenChars)
+console.log(twentySomethingLongFullNames2)
+                                            
