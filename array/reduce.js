@@ -51,20 +51,21 @@ const cars = [
     }
   ]
 
-  function groupCars(result, item) {
-    if (result[item.id] && (result[item.id].id == item.id)) {
-        result[item.id].images.push(item.imgHash)
+  // acc => accumulator
+  const groupCars = (acc, item) => {
+    if (acc[item.id] && (acc[item.id].id == item.id)) {
+        acc[item.id].images.push(item.imgHash)
     } else {
         const images = []
         images.push(item.imgHash)
-        result[item.id] = {
+        acc[item.id] = {
             id: item.id,
             name: item.name,
             images
         }
     }
 
-    return result
+    return acc
   }
   
   const carlist = cars.reduce(groupCars, {})
