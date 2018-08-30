@@ -8,3 +8,5 @@ JavaScript experiments and examples :-)
 ### References
 
 https://github.com/manjufy/You-Dont-Know-JS
+
+https://eloquentjavascript.net/
