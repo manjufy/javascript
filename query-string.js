@@ -8,6 +8,6 @@ console.log('Query => ', queryStr.parse(query))
  * { 
  *    access_token: '50d935da34d5bf48d0560e30d1f052ee56d030bc',
  *    scope: 'user:email',
- *     token_type: 'bearer' 
+ *    token_type: 'bearer' 
  * }
  */
