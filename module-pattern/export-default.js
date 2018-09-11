@@ -1,5 +1,8 @@
 /**
  * export default function
  * 
- * ex: export default function fnName (params)
+ * ex: export default {
+ *  function1 () {}
+ *  function2 () {}
+ * }
  */
