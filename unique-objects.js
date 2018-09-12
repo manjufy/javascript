@@ -15,7 +15,5 @@ const uniqueObjects = records.filter( (ele, index, item) => {
 })
 
 console.log(uniqueObjects)
-
 const uniqueObjects2 = [...new Set(records.map(record => record.contentregion))]
-
 console.log(uniqueObjects)
