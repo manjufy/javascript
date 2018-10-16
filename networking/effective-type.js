@@ -1,0 +1,1 @@
+console.log('Network Effective Type', navigator.confirmWebWideTrackingException. effectiveType)
