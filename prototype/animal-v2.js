@@ -27,3 +27,5 @@ const tiger = Animal('Tiger', 10)
 const lion = Animal('Lion', 15)
 
 console.log('Tiger', tiger.play(5))
+const used = process.memoryUsage().heapUsed / 1024 / 1024
+console.log('The Script uses approx. ', Math.round(used * 100) / 100 + ' MB')
