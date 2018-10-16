@@ -18,3 +18,5 @@ animal.play = length => {
 }
 
 console.log('Animal', animal.name, animal.play())
+const used = process.memoryUsage().heapUsed / 1024 / 1024
+console.log('The Script uses approx. ', Math.round(used * 100) / 100 + ' MB')
