@@ -12,6 +12,8 @@ https://medium.com/@koresar/fun-with-stamps-episode-1-stamp-basics-e0627d81efe0
 
 https://javascript.info/
 
+https://medium.freecodecamp.org/the-complete-javascript-handbook-f26b2c71719c
+
 https://github.com/manjufy/You-Dont-Know-JS
 
 https://eloquentjavascript.net/
