@@ -41,6 +41,8 @@ wait(300)
 .then(value => console.log(value)) // 42
 ```
 
+`if you are chaining, you're composing`
+
 
 What is object composition?
 
