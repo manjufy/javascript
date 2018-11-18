@@ -49,3 +49,8 @@ What is object composition?
 
 
 Question: Essence of Software Development?
+
+
+## Reference
+
+https://medium.com/javascript-scene/composing-software-an-introduction-27b72500d6ea
