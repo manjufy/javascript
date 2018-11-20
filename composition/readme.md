@@ -157,9 +157,36 @@ compose2(double)(inc)(3)
 6. double(4) evaluates to 8.
 7. 8 gets returned from the function.
 
+**JavaScript has the most important features needed for functional programming**
+
+- First class functions
+- Anonymous functions and concise lambda syntax
+- Closures
+
+
+### Pointers
+
+- JavaScript is a multi-paradigm language, meaning that it supports programming in many different styles.
+    - Imperative/procedural
+    - Object-oriented
+    - Functional
+
+- Imperative and oop tend to imply that almost everything needs to be mutable
+- A `const` object can't be reassigned to refer to a completely different object, but the object it refers to can have its properties `mutated`
+- `Tail call optimisation`: Tail call optimization is a feature which allows recursive functions to reuse stack frames for recursive calls.
+
+## Functional Programming In JavaScript
+
+
+
 ## Reference
 
 https://medium.com/javascript-scene/composing-software-an-introduction-27b72500d6ea
 
 https://medium.com/javascript-scene/the-rise-and-fall-and-rise-of-functional-programming-composable-software-c2d91b424c8c
+
+https://medium.com/javascript-scene/why-learn-functional-programming-in-javascript-composing-software-ea13afc7a257
+
+https://medium.com/javascript-scene/a-functional-programmers-introduction-to-javascript-composing-software-d670d14ede30#.zdpw16p65
+
 
