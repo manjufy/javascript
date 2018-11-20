@@ -26,3 +26,5 @@ console.log({...person, ...person2})
      ...person2,
      ...person3
  })
+
+ // Object.assign({}) is the substitute for spread operator if it does not support in browsers.
