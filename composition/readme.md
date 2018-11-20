@@ -113,7 +113,49 @@ const c = {...a, ...b} // {a: 'a', b: 'b'}
 
 ```
 
-Question: Essence of Software Development?
+##  Lambda Calculus
+
+Lambda calculus is all about function composition.
+
+- **Functions are always anonymous** 
+    ```
+        const sum = (x, y) => x + y
+        // (x, y) => x + y is anonymous function
+    ```
+
+- **Functions in lambda calculus only accept a single input**. They're unary. If you need more than one parameter, the function will take one input and return a new function that takes the next.
+    ```
+        (x, y) => x + y => is x => y => x + y
+    ```
+- **Functions are first class**, meaning that functions can be used as inputs to other functions, and functions can return functions.
+
+Together, these features form a simple, yet expressive vocabulary for composing software using functions as the primary building block.
+
+The classic function composition takes the output from the one function and uses it as input for another function.
+
+Example:
+
+```
+f . g
+```
+Can be written as:
+```
+compose2 = f => g => x => f(g(x))
+
+double = n => n * 2
+inc = n => n + 1
+compose2(double)(inc)(3)
+
+`f` is `double()`, `g` is `inc`, and `x` is `3`
+```
+
+1. The first passes double and returns a new function.
+2. The returned function takes inc and returns a new function.
+3. The next returned function takes 3 and evaluates f(g(x)), which is now double(inc(3)).
+4. x evaluates to 3 and gets passed into inc().
+5. inc(3) evaluates to 4.
+6. double(4) evaluates to 8.
+7. 8 gets returned from the function.
 
 ## Reference
 
