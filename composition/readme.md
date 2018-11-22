@@ -189,4 +189,6 @@ https://medium.com/javascript-scene/why-learn-functional-programming-in-javascri
 
 https://medium.com/javascript-scene/a-functional-programmers-introduction-to-javascript-composing-software-d670d14ede30#.zdpw16p65
 
+--- Start from Curry
+
 
