@@ -1,5 +1,14 @@
 # export
 
+Types of exports
+
+```
+1— Named exports (several per module) 
+2— Default exports (one per module)
+3 — Mixed named & default exports 
+4— Cyclical Dependencies
+```
+
 export statement is used when creating JavaScript modules to export functions, objects, or primitive values from the modules so they can be used by other programs with the import statement.
 
 ### Named exports
@@ -25,6 +34,8 @@ export default function() {}
 ```
 export default class {}
 ```
+
+
 
 Reference: https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export
 
