@@ -27,3 +27,5 @@ export default class {}
 ```
 
 Reference: https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export
+
+https://hackernoon.com/import-export-default-require-commandjs-javascript-nodejs-es6-vs-cheatsheet-different-tutorial-example-5a321738b50f
