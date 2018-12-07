@@ -4,7 +4,7 @@ function cube(x) {
 
 const foo = Math.PI + Math.SQRT2
 
-var graph = {
+const graph = {
   options: {
     color: 'white',
     thickness: '2px'
