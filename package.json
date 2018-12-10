@@ -12,6 +12,8 @@
   "author": "Manjunath Reddy",
   "license": "MIT",
   "dependencies": {
-    "babel": "^6.5.2"
+    "babel": "^6.5.2",
+    "moment": "^2.22.2",
+    "moment-timezone": "^0.5.23"
   }
 }
