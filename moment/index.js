@@ -1,8 +1,7 @@
 const moment = require('moment-timezone')
-console.log('Moment')
 
 const format = function (dt, fmt) {
-	var locale = 'en-MY';
+	var locale = 'ms-MY';
 	moment.locale(locale);
 	var tz = 'Asia/Kuala_Lumpur';
 	fmt = (fmt || 'd').toLowerCase();
@@ -17,6 +16,5 @@ const format = function (dt, fmt) {
 		case 'dt': return ret.format('L').replace(/\//g, '-') + ' ' + ret.format('LT');
 	}
 }
-
 
 console.log(format(moment().format(), 'll')) // 10-DIS-2018
