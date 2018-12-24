@@ -22,10 +22,12 @@ console.log(car)
  const unusualPropertyNames = {
      '': 'An empty string',
      '!': 'Bang!...',
-     1: 6
+     1: 6,
+     'string': 4,
  }
 
 //  console.log(unusualPropertyNames.'') // SyntaxError: Unexpected string
  // If the property name would not be a valid JavaScript identifier or number, it must be encoded in quotes
+ console.log(unusualPropertyNames);
  console.log(unusualPropertyNames['']);
  console.log(unusualPropertyNames['1']);
