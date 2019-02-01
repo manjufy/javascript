@@ -34,7 +34,7 @@
  console.log(String('manju') == 'manju') // true
 
  console.log(String('manju') == String('manju'))            // true
- console.log(new String('manju') == new String('manju'))    // false
+ console.log(new String('manju') == new String('manju'))    // false .toString() [toString]
  console.log(new String('manju') == 'manju')                // true
 
  console.log(-0 == +0) // true
@@ -47,3 +47,13 @@ console.log(-0 === +0); // https://stackoverflow.com/questions/7223359/are-0-and
 console.log("" == false)    // true
 
 console.log("true" == true)    // false
+
+console.log(typeof [], typeof '');
+console.log([] == '');  // true
+console.log([] == 0);   // true
+console.log([''] == '') // true
+console.log([0] == '0') // true
+console.log([0] == ''); // true
+console.log('' == [0]); // true
+console.log([null] == '');
+console.log([null] == null)
