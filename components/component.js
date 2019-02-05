@@ -47,8 +47,72 @@ const Component = ((win, doc, log, si, ci, sto, loc, undefined) => {
         }
 
         render() {
-            const {elem, data} = this.state;
+            const {elem, data} = this.state; // here we are getting the elem and data deconstructed from the state
+
+            // make sure there's a template
+            if (!this.template) {
+                throw 'ComponentJS: No template was provided';
+            }
+
+            // if elem is an element, use it. 
+            // if it's a selector, get it
+            let _elem = typeof elem === 'string' ? doc.querySelector(elem) : elem;
+
+            if (!elem) return; // if there is no elem, stop and return.
+
+            let _template = typeof this.template === 'function'
+                            ? this.template(data)
+                            : this.template;
+            
+            // array indexOf === -1 true if index value is not found.
+            if (['string', 'number'].indexOf(typeof _template) === -1) return;
+            
+            // render the template into the element
+            if (_elem.innerHTML === _template) return; // if they're the same, return
+            _elem.innerHTML = _template // else update with new template
+
+            // dispatch a render event -> https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent
+            if (typeof win.CustomEvent === 'function') {
+                let event = new CustomEvent('render', {
+                    bubbles: true
+                });
+                _elem.dispatchEvent(event);
+            }
+
+            // return the _elem for use elsewhere
+            return _elem;
+        } // render
+    } // class Component
+
+    return Component
+})(window, document, console, setInterval, clearInterval, setTimeout, location);
+
+const setup_navbar = () => {
+    class NavBar extends Component {
+        constructor(props) {
+            super(props);
+            this.state = { ...props };
         }
+
+        template(props) {
+            const { heading } = props;
+            let template = `
+                <div class="nav">
+                    ${heading}
+                </div>
+            `;
+
+            return template;
+        };
     }
 
-})(window, document, console, setInterval, clearInterval, setTimeout, location);
+    const INITIAL_STATE = {
+        elem: '#navbar', // the target element we will be injecting the navbar component into.
+        data: {
+            heading: 'Welcome to my navbar component.'
+        }
+    };
+
+    let navbar = new NavBar(INITIAL_STATE);
+    navbar.render(); // render the navbar onto the page.
+}

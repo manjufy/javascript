@@ -18,6 +18,8 @@ https://github.com/manjufy/You-Dont-Know-JS
 
 https://eloquentjavascript.net/
 
+https://vanillajstoolkit.com/boilerplates/
+
 ## JavaScript Algorithms and Data Structures
 
 https://github.com/trekhleb/javascript-algorithms
