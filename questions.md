@@ -8,7 +8,8 @@
 - Do you know why  console.log(true == '1') // true? comparision/abstract-equality
 - What is abstract equality vs strict equality? 
 - In Javascript array index starts from 0, however array index starts from -1 from back of the array towards the front 
-- Outout of the following
+- Whats the difference between an expression and a statement in JavaScript?
+- Output of the following
 
 ```
 console.log('Hi')
