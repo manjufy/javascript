@@ -27,3 +27,7 @@ https://dev.to/bananabrann/includes-for-noobs-41cc
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness#Abstract_equality_strict_equality_and_same_value_in_the_specification
 
 https://blog.webf.zone/front-end-javascript-interviews-in-2018-19-e17b0b10514
+
+https://30secondsofinterviews.org/
+
+https://30secondsofcode.org/
