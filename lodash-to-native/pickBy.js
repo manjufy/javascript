@@ -13,7 +13,7 @@ const params = {
 function pickBy(object) {
 	const obj = {};
 	for(const key in object) {
-		if (schema[key]) {
+		if (schema.hasOwnProperty(key)) {
 			obj[key] = object[key];
 		}
 	}
