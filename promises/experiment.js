@@ -20,4 +20,14 @@ const start = async () => {
     console.log('User', user);
 }
 
-setTimeout(start, 100);
+const start2 = async () => {
+    return getUser()
+}
+
+setTimeout(start, 100); // execute immediately
+
+// getUser is returned without being await so that we could `then` it here.
+start2()
+    .then(data => {
+        console.log('User', data)
+    })
