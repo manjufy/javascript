@@ -11,23 +11,23 @@ function SimpleCache() {
 
     // public methods
     function get(key) {
-        return (cache[key])
+        return cache[key]
     }
 
     function has(key) {
-        return (key in cache)
+        return key in cache
     }
 
     function remove(key) {
         delete (cache[key])
 
-        return (this)
+        return this
     }
 
     function set(key, value) {
         cache[key] = value
 
-        return (this)
+        return this
     }
 }
 
@@ -38,3 +38,4 @@ var cache = SimpleCache()
 ;
 
 console.log(cache.has("beep"));
+console.log(cache.get("beep"));
