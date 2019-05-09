@@ -32,10 +32,10 @@ function SimpleCache() {
 }
 
 var cache = SimpleCache()
-	.set( "foo", "Bar" )
-	.set( "hello", "world" )
-	.set( "beep", "boop" )
-;
+	.set("foo", "Bar")
+	.set("hello", "world")
+	.set("beep", "boop");
 
 console.log(cache.has("beep"));
 console.log(cache.get("beep"));
+
