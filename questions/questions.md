@@ -1,5 +1,8 @@
 # JavaScript Questions
 
+- What is Hoisting?
+- Difference between Sync and Async?
+- Callbacks vs Promises?
 - Length of a number? // data-types/integer.js
 - What is function* & what are generators
 - What are primitive and Primitive Wrappers in JavaScript
