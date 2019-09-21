@@ -26,6 +26,8 @@ https://github.com/trekhleb/javascript-algorithms
 
 https://www.youtube.com/playlist?list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8
 
+https://dev.to/emmawedekind/bubble-sort-in-javascript-2con
+
 ## Tutorials: Callbacks
 
 [Callback 1](https://www.sitepoint.com/callbacks-javascript/)
