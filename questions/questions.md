@@ -1,6 +1,8 @@
 # JavaScript Questions
-
+- Why do we use `use strict`
+- What is IIFE - Immedilately Invoked Function Expression
 - What is Hoisting?
+- Dot vs Bracket notation?
 - Difference between Sync and Async?
 - Callbacks vs Promises?
 - Length of a number? // data-types/integer.js
