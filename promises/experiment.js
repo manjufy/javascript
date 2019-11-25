@@ -12,22 +12,45 @@ const getUser = () => {
         ])
     })
 }
+// 1
+getUser().then(function(data) {
+    console.log(data)
+    return hello();
+})
+.then(data => console.log(data));
 
-const start = async () => {
-    console.log('Start')
-    const user = await getUser()
-    // const user = await getUser().then(data => data); // same as above statement
-    console.log('User', user);
+// 2
+getUser().then(function () {
+    hello()
+}).then(data => console.log(data))
+
+// 3
+getUser().then(hello())
+.then(data => console.log(data));
+
+// 4
+getUser().then(hello).then(data => console.log(data))
+
+
+function hello() {
+    return 'hello'
 }
 
-const start2 = async () => {
-    return getUser()
-}
+// const start = async () => {
+//     console.log('Start')
+//     const user = await getUser()
+//     // const user = await getUser().then(data => data); // same as above statement
+//     console.log('User', user);
+// }
 
-setTimeout(start, 100); // execute immediately
+// const start2 = async () => {
+//     return getUser()
+// }
 
-// getUser is returned without being await so that we could `then` it here.
-start2()
-    .then(data => {
-        console.log('User', data)
-    })
+// setTimeout(start, 100); // execute immediately
+
+// // getUser is returned without being await so that we could `then` it here.
+// start2()
+//     .then(data => {
+//         console.log('User', data)
+//     })
