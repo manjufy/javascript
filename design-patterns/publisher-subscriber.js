@@ -1,5 +1,6 @@
 /**
  * The Publisher/Subscriber Pattern in JS (Pub/Sub)
+ * https://medium.com/better-programming/the-publisher-subscriber-pattern-in-javascript-2b31b7ea075a
 */
 
 function pubSub() {

@@ -1,0 +1,13 @@
+<input type="text" name="firstname[]" value="100">
+<input type="text" name="firstname[]" value="200">
+<input type="text" name="firstname[]" value="300">
+<input type="text" name="firstname[]" value="400">
+<script>
+    const inps = document.getElementsByName('firstname[]');
+    console.log(inps);
+
+    for (var i = 0; i <inps.length; i++) {
+        var inp=inps[i];
+        console.log(inp.value);
+    }
+</script>

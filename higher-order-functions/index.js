@@ -19,9 +19,27 @@ for (var i = 0; i < animals.length; i++) {
 }
 
 // filter
-var isDog = function(animal) {
-  return animal.species === 'dog'
+// var isDog = function(animal) {
+//   return animal.species === 'dog'
+// }
+
+// var dogs = animals.filter(isDog)
+// var otherAnimals = animals.reject(isDog)
+
+
+const getName = function (name) {
+  return name
 }
 
-var dogs = animals.filter(isDog)
-var otherAnimals = animals.reject(isDog)
+const getAge = function (age) {
+  return age
+}
+
+function getNameAndAge() {
+  const name = getName('Manjunath');
+  const age = getAge(33)
+
+  return `${name}:${age}`
+}
+
+console.log(getNameAndAge())

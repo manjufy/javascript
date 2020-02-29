@@ -15,6 +15,7 @@
 - In Javascript array index starts from 0, however array index starts from -1 from back of the array towards the front 
 - Whats the difference between an expression and a statement in JavaScript?
 - Output of the following
+- https://medium.com/javascript-in-plain-english/a-common-javascript-phone-screen-question-asked-by-facebook-357a0139c458
 
 ```
 console.log('Hi')
