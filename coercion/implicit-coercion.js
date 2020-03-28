@@ -14,3 +14,6 @@
 
  const multiple = 3 * '4';
  console.log(multiple) // 12 because 4 is implicitly converted to integer 4
+
+ const oneAndTwo = +'1' + +'2';
+ console.log(oneAndTwo); // 3 since we have '1' and '2' are both converted to numbers by the unary '+' operator

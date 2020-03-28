@@ -57,3 +57,5 @@ console.log([0] == ''); // true
 console.log('' == [0]); // true
 console.log([null] == '');
 console.log([null] == null)
+console.log(4 < 5 < 6); // true; In JavaScript, comparisons are done from left to right
+console.log(6 > 5 > 4);  // false; first 6 > 5 evaluated and returns true. Then true > 4 which is 1 > 4, which is false
