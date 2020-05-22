@@ -71,3 +71,5 @@ const person1 = {
 const person2 = person1;
 
 console.log(person1, person2)
+
+https://medium.com/javascript-in-plain-english/six-things-you-should-know-about-objects-in-javascript-ccd11a9e1998
