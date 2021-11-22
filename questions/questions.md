@@ -28,6 +28,14 @@ console.log('World....')
 ```
 - Truncate a string up to a specified length
 
+- Whats the difference between
+
+```
+Object.create(null) 
+// vs
+Object.create({})
+```
+
 
 https://dev.to/bananabrann/includes-for-noobs-41cc
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness#Abstract_equality_strict_equality_and_same_value_in_the_specification
