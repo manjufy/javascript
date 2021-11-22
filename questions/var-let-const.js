@@ -31,4 +31,4 @@ console.log(personObj) // { name: 'Micheal Schumacher', age: 50 }
   * let   - is a signal that the variable may be reassigned, such as a counter in a loop, value swap in an algorithm. used only in the block its defined in
   * var   - is now the weakest signal available.
   */
- // https://medium.com/javascript-scene/javascript-es6-var-let-or-const-ba58b8dcde75
+ // https://medium.com/javascript-sce      ne/javascript-es6-var-let-or-const-ba58b8dcde75

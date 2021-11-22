@@ -1,5 +1,7 @@
 # Data types in JS
 
+In JavaScript all primitive data types except `null` and `undefined` are objects. A string is generated from String constructor, a number is generated from Number constructor. a boolean is from Boolean, symbol is from Symbol.
+
 ## Primitive
 
 Boolean
@@ -14,7 +16,7 @@ String
 
 Symbol
 
-## Non-primitive
+## Non-primitive (Reference Data Types)
 
 Object
 

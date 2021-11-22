@@ -5,3 +5,5 @@
  * - Promise.all
  * - Promise.race
  */
+
+ // https://github.com/tomanagle/JavaScript-design-patterns
